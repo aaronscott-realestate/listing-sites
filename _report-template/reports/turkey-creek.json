@@ -143,7 +143,7 @@
    {
     "n": "Meta Ads",
     "p": "meta",
-    "r": 1258,
+    "r": 1260,
     "rl": "reached",
     "sl": "Running",
     "st": "live",
@@ -392,7 +392,7 @@
    }
   ],
   "reachNote": "",
-  "rev": "2026-11-05T03:41:46.000Z",
+  "rev": "2026-11-05T03:55:00.000Z",
   "snips": [
    {
     "k": "s_just",
@@ -473,7 +473,7 @@
    },
    {
     "l": "Meta listing ads (local + retargeting audiences)",
-    "v": 1258
+    "v": 1260
    },
    {
     "basis": "7 agent post campaigns x 450 + FB Just Listed 450 + IG Just Listed 300 + IG Story 150 + LinkedIn 300 + Google Business Profile 300 = 4,650, rounded down. Conservative per-post organic reach for an agent account; Reel and YouTube not counted until confirmed posted. Replace with Meta Insights total when Aaron sends it.",
