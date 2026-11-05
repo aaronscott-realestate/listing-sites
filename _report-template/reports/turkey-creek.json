@@ -135,17 +135,17 @@
    {
     "n": "Meta Ads",
     "p": "meta",
+    "r": 625,
+    "rl": "reached",
     "sl": "Running",
     "st": "live",
     "th": "s_meta",
-    "w": "Retargeting ads",
-    "r": 615,
-    "rl": "reached"
+    "w": "Retargeting ads"
    },
    {
     "n": "Meta Ads",
     "p": "meta",
-    "r": 662,
+    "r": 678,
     "rl": "reached",
     "sl": "Running",
     "st": "live",
@@ -394,7 +394,7 @@
    }
   ],
   "reachNote": "",
-  "rev": "2026-11-05T04:13:28.000Z",
+  "rev": "2026-11-05T10:55:19.000Z",
   "snips": [
    {
     "k": "s_just",
@@ -475,7 +475,7 @@
    },
    {
     "l": "Meta listing ads",
-    "v": 662
+    "v": 678
    },
    {
     "basis": "7 agent post campaigns x 450 + FB Just Listed 450 + IG Just Listed 300 + IG Story 150 + LinkedIn 300 + Google Business Profile 300 = 4,650, rounded down. Conservative per-post organic reach for an agent account; Reel and YouTube not counted until confirmed posted. Replace with Meta Insights total when Aaron sends it.",
@@ -485,7 +485,7 @@
    },
    {
     "l": "Retargeting ads",
-    "v": 615
+    "v": 625
    }
   ],
   "socialNote": "Reach from every Facebook and Instagram post, boost, ad, Reel and YouTube video adds in as each reports",
@@ -578,7 +578,7 @@
    "Mailchimp Reports",
    "Buffer Analytics"
   ],
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "videoAssets": 7,
   "voices": [
    "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
