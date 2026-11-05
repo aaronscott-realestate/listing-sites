@@ -392,7 +392,7 @@ $('addr').textContent=D.address; $('city').textContent=D.city;
 $('upd').textContent='Updated '+fmt(D.updatedAt);
 $('day').textContent='Day '+day+' since launch';
 const liveN=D.channels.filter(c=>c.st==='live').length, schedN=D.channels.filter(c=>c.st==='sched').length;
-$('bandtxt').textContent=liveN+' live now · '+schedN+' up next · pre-market since Sept 18';
+$('bandtxt').textContent=liveN+' channels running now · '+schedN+' more coming · pre-market since Sept 18';
 $('voice').textContent=D.voices[seed%D.voices.length];
 ['seal','seal2'].forEach(id=>{$(id).src=I.seal});
 ['wmTop','wmFoot'].forEach(id=>{$(id).src=I.wordmark});
