@@ -1,5 +1,5 @@
 // Simple password gate for the seller report. Password is stored only as a hash.
-const PASS_HASH = "c7a2144a14d9ff4cab62e381d61fa6595d58fd940f1479510ba8f298bcc92dbd"; // sha256("tc-report:" + password)
+const PASS_HASH = "cca4a946b4affb82629ca200b783b6bb6d541f6b5fb1e8026278fabdf9bd707d"; // sha256("tc-report:" + password)
 const COOKIE = "tc_report";
 const YEAR = 60 * 60 * 24 * 365;
 
@@ -30,7 +30,7 @@ button{width:100%;margin-top:10px;font-size:16px;font-weight:bold;letter-spacing
 <h1>4283 Turkey Creek Rd</h1><div class="c">Williamsport, Tennessee</div>
 <div class="bar"></div>
 ${err ? '<p class="e">That password didn\'t match. Try again.</p>' : ''}
-<input type="password" name="pw" placeholder="Password" autocomplete="current-password" autocapitalize="none" autocorrect="off" required autofocus>
+<input type="password" name="pw" placeholder="Password" inputmode="numeric" pattern="[0-9]*" autocomplete="off" required autofocus>
 <button type="submit">Open the report</button>
 <div class="n">You'll only need this once on each phone or computer.</div>
 </form></body></html>`;
