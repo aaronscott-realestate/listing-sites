@@ -132,12 +132,14 @@
    "sl": "Running",
    "st": "live",
    "th": "s_meta",
-   "w": "Retargeting ads"
+   "w": "Retargeting ads",
+   "r": 615,
+   "rl": "reached"
   },
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 1262,
+   "r": 662,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -386,7 +388,7 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-05T04:07:06.000Z",
+ "rev": "2026-11-05T04:13:28.000Z",
  "snips": [
   {
    "k": "s_just",
@@ -466,8 +468,8 @@
    "v": 27144
   },
   {
-   "l": "Meta listing ads (local + retargeting audiences)",
-   "v": 1262
+   "l": "Meta listing ads",
+   "v": 662
   },
   {
    "basis": "7 agent post campaigns x 450 + FB Just Listed 450 + IG Just Listed 300 + IG Story 150 + LinkedIn 300 + Google Business Profile 300 = 4,650, rounded down. Conservative per-post organic reach for an agent account; Reel and YouTube not counted until confirmed posted. Replace with Meta Insights total when Aaron sends it.",
@@ -476,8 +478,8 @@
    "v": 4600
   },
   {
-   "l": "Retargeting ads (split from listing ads as Meta reports)",
-   "v": null
+   "l": "Retargeting ads",
+   "v": 615
   }
  ],
  "socialNote": "Reach from every Facebook and Instagram post, boost, ad, Reel and YouTube video adds in as each reports",
