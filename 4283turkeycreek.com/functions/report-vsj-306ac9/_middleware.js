@@ -42,6 +42,8 @@ const html = (body, status = 200, extra = {}) => new Response(body, {
 
 export async function onRequest(ctx) {
   const { request, next } = ctx;
+  // rev.txt is public (just a version stamp) so publishing can confirm the update went live
+  if (new URL(request.url).pathname.endsWith("/rev.txt")) return next();
   const cookie = request.headers.get("cookie") || "";
   const m = cookie.match(new RegExp("(?:^|; )" + COOKIE + "=([a-f0-9]{64})"));
   if (m && m[1] === PASS_HASH) return next();

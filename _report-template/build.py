@@ -36,6 +36,7 @@ def build(rep, check=False):
     outs = {
         os.path.join(ROOT, dom, path, "index.html"): page,
         os.path.join(ROOT, dom, "functions", path, "_middleware.js"): mw,
+        os.path.join(ROOT, dom, path, "rev.txt"): str(d.get("rev", "")) + "\n",
     }
     hp = os.path.join(ROOT, dom, "_headers")
     hdr = open(hp).read() if os.path.exists(hp) else ""
