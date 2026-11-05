@@ -237,8 +237,8 @@ footer .wrap{padding-block:28px 34px;display:flex;flex-wrap:wrap;gap:22px;align-
 <script id="imgs" type="application/json">__IMGS__</script>
 <script>
 (function(){
-const D=JSON.parse(document.getElementById('data').textContent);
-const I=JSON.parse(document.getElementById('imgs').textContent);
+function run(D){
+const I=Object.assign({},JSON.parse(document.getElementById('imgs').textContent||'{}'),D._imgs||{});
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const LKRE=new RegExp('(?<![\\w.-])('+[D.domain,'1aaronscott.com'].filter(Boolean).map(x=>x.replace(/[.]/g,'\\.')).join('|')+')(?![\\w-])','g');
@@ -317,6 +317,11 @@ $('snipLab').textContent=D.snips.length+' pieces';
 const tlMain=D.timeline.filter(e=>!(e.d==='Pre-market'||e.d===D.premarketStart)),tlPre=D.timeline.filter(e=>e.d==='Pre-market'||e.d===D.premarketStart);
 $('tl').innerHTML=tlMain.concat(tlPre.length?[{d:'Before launch',t:'Pre-market campaign, '+fmt(D.premarketStart||'')+' – '+fmt(preEnd),hdr:true}]:[],tlPre.map(e=>({d:'Pre-market',t:e.t}))).map(e=>'<li class="'+(e.next?'next':'')+(e.hdr||e.d==='Pre-market'?' pre':'')+(e.hdr?' hdr':'')+'"><div class="d">'+(e.next&&isDate(e.d)?'Up next · ':'')+esc(fmt(e.d))+'</div><div>'+lk(e.t)+'</div></li>').join('');
 $('tracked').innerHTML=D.tracked.map(t=>'<span>'+esc(t)+'</span>').join('');
+}
+// Data is inline in the dashboard preview; on the live site it comes from data.json next to this page.
+const inl=(document.getElementById('data').textContent||'').trim();
+if(inl){run(JSON.parse(inl));}
+else{fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(run).catch(()=>{document.getElementById('voice').textContent='This report is updating. Refresh in a minute.'});}
 })();
 </script>
 

@@ -25,16 +25,18 @@ def build(rep, check=False):
     pw = str(m["password"]).strip().lower().replace(" ", "")
     assert pw, "password required"
     d = dict(d); d["domain"] = dom
-    dj = json.dumps(d, ensure_ascii=False, indent=1).replace("</", "<\\/")
-    ij = json.dumps(imgs, ensure_ascii=False).replace("</", "<\\/")
     page = open(os.path.join(T, "report.html")).read()
-    page = page.replace("__DATA__", "\n" + dj + "\n").replace("__IMGS__", ij)
+    # Page is the bare template; everything that changes lives in data.json so a publish only touches data.json + rev.txt
+    page = page.replace("__DATA__", "").replace("__IMGS__", "{}")
+    d["_imgs"] = imgs
+    dj = json.dumps(d, ensure_ascii=False, indent=1)
     mw = open(os.path.join(T, "_middleware.js")).read()
     h = hashlib.sha256(("tc-report:" + pw).encode()).hexdigest()
     mw = (mw.replace("__HASH__", h).replace("__PATH__", path)
             .replace("__ADDRESS__", html.escape(d.get("address", ""))).replace("__CITY__", html.escape(d.get("city", ""))))
     outs = {
         os.path.join(ROOT, dom, path, "index.html"): page,
+        os.path.join(ROOT, dom, path, "data.json"): dj + "\n",
         os.path.join(ROOT, dom, "functions", path, "_middleware.js"): mw,
         os.path.join(ROOT, dom, path, "rev.txt"): str(d.get("rev", "")) + "\n",
     }
