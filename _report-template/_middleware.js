@@ -43,7 +43,13 @@ const html = (body, status = 200, extra = {}) => new Response(body, {
 export async function onRequest(ctx) {
   const { request, next } = ctx;
   // rev.txt is public (just a version stamp) so publishing can confirm the update went live
-  if (new URL(request.url).pathname.endsWith("/rev.txt")) return next();
+  if (new URL(request.url).pathname.endsWith("/rev.txt")) {
+    try {
+      const r = await ctx.env.ASSETS.fetch(new URL("data.json", request.url));
+      const d = await r.json();
+      return new Response((d.rev || "") + "\n", { headers: { "content-type": "text/plain", "cache-control": "no-store" } });
+    } catch (e) { return new Response("\n", { headers: { "cache-control": "no-store" } }); }
+  }
   const cookie = request.headers.get("cookie") || "";
   const m = cookie.match(new RegExp("(?:^|; )" + COOKIE + "=([a-f0-9]{64})"));
   if (m && m[1] === PASS_HASH) return next();

@@ -26,7 +26,7 @@ def build(rep, check=False):
     assert pw, "password required"
     d = dict(d); d["domain"] = dom
     page = open(os.path.join(T, "report.html")).read()
-    # Page is the bare template; everything that changes lives in data.json so a publish only touches data.json + rev.txt
+    # Page is the bare template; everything that changes lives in data.json so a publish only touches data.json (rev.txt is served from it by the middleware)
     page = page.replace("__DATA__", "").replace("__IMGS__", "{}")
     d["_imgs"] = imgs
     dj = json.dumps(d, ensure_ascii=False, indent=1)
@@ -38,7 +38,6 @@ def build(rep, check=False):
         os.path.join(ROOT, dom, path, "index.html"): page,
         os.path.join(ROOT, dom, path, "data.json"): dj + "\n",
         os.path.join(ROOT, dom, "functions", path, "_middleware.js"): mw,
-        os.path.join(ROOT, dom, path, "rev.txt"): str(d.get("rev", "")) + "\n",
     }
     hp = os.path.join(ROOT, dom, "_headers")
     hdr = open(hp).read() if os.path.exists(hp) else ""
