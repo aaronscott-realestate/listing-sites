@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow,noarchive"><link rel="icon" href="img/seal.png"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
-<title>Client Marketing Report Turkey Creek</title>
+<title>Your Marketing Report</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=Source+Serif+4:ital,wght@1,400;1,600&display=swap">
@@ -166,8 +166,8 @@ footer .wrap{padding-block:28px 34px;display:flex;flex-wrap:wrap;gap:22px;align-
   <div class="wrap top"><img class="seal" id="seal" alt="Aaron Scott"><div class="topr"><img class="wm-top" id="wmTop" alt="1aaronscott"><div class="upd"><span class="dot"></span><span id="upd">Live report</span></div></div></div>
   <div class="wrap txt">
     <div class="lab" style="color:var(--paper)">Your Marketing Report</div>
-    <h1 id="addr">4283 Turkey Creek Rd</h1>
-    <div class="city" id="city">Williamsport, Tennessee</div>
+    <h1 id="addr"></h1>
+    <div class="city" id="city"></div>
     <div class="rule"></div>
     <p class="voice" id="voice"></p>
     <div class="cap" id="cap"></div>
@@ -190,7 +190,7 @@ footer .wrap{padding-block:28px 34px;display:flex;flex-wrap:wrap;gap:22px;align-
   <div class="stats" id="stats"></div>
 
   <section>
-    <div class="sh"><h2>Since Launch</h2><span class="lab">Oct 29 – today</span></div>
+    <div class="sh"><h2>Since Launch</h2><span class="lab" id="sinceLab"></span></div>
     <div class="phases" id="phases"></div>
   </section>
 
@@ -235,138 +235,584 @@ footer .wrap{padding-block:28px 34px;display:flex;flex-wrap:wrap;gap:22px;align-
 
 <script id="data" type="application/json">
 {
- "updatedAt":"2026-11-04",
- "start":"2026-10-29",
- "premarketStart":"2026-09-18",
- "address":"4283 Turkey Creek Rd","city":"Williamsport, Tennessee",
- "voices":[
+ "updatedAt": "2026-11-04",
+ "start": "2026-10-29",
+ "premarketStart": "2026-09-18",
+ "address": "4283 Turkey Creek Rd",
+ "city": "Williamsport, Tennessee",
+ "voices": [
   "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
   "Close to everything, yet completely private. Fifteen minutes to Columbia Square, twenty to Leipers Fork.",
   "Pasture, a spring-fed waterfall and pond, and an updated home that doesn't feel far from anything."
  ],
- "photos":[
-  {"k":"front","c":"Front of the home"},
-  {"k":"gate","c":"Gated entry, long paved drive"},
-  {"k":"pasture","c":"Five acres of rolling pasture"},
-  {"k":"water","c":"Spring, waterfall and pond"},
-  {"k":"fire","c":"Gas-log fireplace, carved mantel"},
-  {"k":"kitchen","c":"Copper farmhouse sink kitchen"},
-  {"k":"primary","c":"Primary suite, two walk-in closets"},
-  {"k":"sunroom","c":"Sunroom, deck and swim-spa hot tub"},
-  {"k":"shop","c":"New insulated shop and carport"},
-  {"k":"back","c":"Cross-fenced back pasture"},
-  {"k":"aerial","c":"Aerial view of the shop and land"}
+ "photos": [
+  {
+   "k": "front",
+   "c": "Front of the home"
+  },
+  {
+   "k": "gate",
+   "c": "Gated entry, long paved drive"
+  },
+  {
+   "k": "pasture",
+   "c": "Five acres of rolling pasture"
+  },
+  {
+   "k": "water",
+   "c": "Spring, waterfall and pond"
+  },
+  {
+   "k": "fire",
+   "c": "Gas-log fireplace, carved mantel"
+  },
+  {
+   "k": "kitchen",
+   "c": "Copper farmhouse sink kitchen"
+  },
+  {
+   "k": "primary",
+   "c": "Primary suite, two walk-in closets"
+  },
+  {
+   "k": "sunroom",
+   "c": "Sunroom, deck and swim-spa hot tub"
+  },
+  {
+   "k": "shop",
+   "c": "New insulated shop and carport"
+  },
+  {
+   "k": "back",
+   "c": "Cross-fenced back pasture"
+  },
+  {
+   "k": "aerial",
+   "c": "Aerial view of the shop and land"
+  }
  ],
- "feature":{"k":"drone","c":"Absolute privacy on five acres","line":"Gated, set back and surrounded by its own pasture. From the air you see it: nothing crowds this place."},
- "reach":[
-  {"v":3538,"l":"Middle Tennessee agents"},
-  {"v":1320,"l":"Out-of-state relocation agents"},
-  {"v":315,"l":"Coming-soon & pre-listing emails"}
+ "feature": {
+  "k": "drone",
+  "c": "Absolute privacy on five acres",
+  "line": "Gated, set back and surrounded by its own pasture. From the air you see it: nothing crowds this place."
+ },
+ "reach": [
+  {
+   "v": 3538,
+   "l": "Middle Tennessee agents"
+  },
+  {
+   "v": 1320,
+   "l": "Out-of-state relocation agents"
+  },
+  {
+   "v": 315,
+   "l": "Coming-soon & pre-listing emails"
+  }
  ],
- "reachNote":"",
- "social":[
-  {"v":26377,"l":"Porch Sitting at Turkey Creek","src":"Aaron, Meta boost screenshot Nov 3"},
-  {"v":27144,"l":"Turkey Teaser Post","src":"Aaron, Meta boost screenshot Nov 3"},
-  {"v":1034,"l":"Meta listing ads (local + retargeting audiences)"},
-  {"v":4600,"est":true,"l":"Organic posts, Stories & shares (A.I. estimate)","basis":"7 agent post campaigns x 450 + FB Just Listed 450 + IG Just Listed 300 + IG Story 150 + LinkedIn 300 + Google Business Profile 300 = 4,650, rounded down. Conservative per-post organic reach for an agent account; Reel and YouTube not counted until confirmed posted. Replace with Meta Insights total when Aaron sends it."},
-  {"v":null,"l":"Retargeting ads (split from listing ads as Meta reports)"}
+ "reachNote": "",
+ "social": [
+  {
+   "v": 26377,
+   "l": "Porch Sitting at Turkey Creek",
+   "src": "Aaron, Meta boost screenshot Nov 3"
+  },
+  {
+   "v": 27144,
+   "l": "Turkey Teaser Post",
+   "src": "Aaron, Meta boost screenshot Nov 3"
+  },
+  {
+   "v": 1034,
+   "l": "Meta listing ads (local + retargeting audiences)"
+  },
+  {
+   "v": 4600,
+   "est": true,
+   "l": "Organic posts, Stories & shares (A.I. estimate)",
+   "basis": "7 agent post campaigns x 450 + FB Just Listed 450 + IG Just Listed 300 + IG Story 150 + LinkedIn 300 + Google Business Profile 300 = 4,650, rounded down. Conservative per-post organic reach for an agent account; Reel and YouTube not counted until confirmed posted. Replace with Meta Insights total when Aaron sends it."
+  },
+  {
+   "v": null,
+   "l": "Retargeting ads (split from listing ads as Meta reports)"
+  }
  ],
- "socialNote":"Reach from every Facebook and Instagram post, boost, ad, Reel and YouTube video adds in as each reports",
- "videoAssets":7,
- "photoCount":67,
- "phases":[
-  {"n":"Before launch: pre-market","d":"Sept 18 – Oct 28","items":[
-   {"t":"Porch Sitting at Turkey Creek — Meta ad campaign","s":"Facebook + Instagram, the full pre-market run"},
-   {"t":"Turkey Teaser Post — Meta ad campaign","s":"Facebook + Instagram, the full pre-market run"},
-   {"t":"7 personal agent post campaigns","s":"Aaron's own posts and photos"},
-   {"t":"Coming-soon office email + pre-listing relocation agent email","s":"315 recipients, before the public saw it"}
-  ]},
-  {"n":"Full launch","d":"Oct 29 – today","items":[
-   {"t":"13 branded marketing pieces created","s":"Social, ads, email, video, website, mail"},
-   {"t":"Email to 3,538 Middle Tennessee agents","s":"Sent Nov 2"},
-   {"t":"Email to 1,320 out-of-state relocation agents","s":"Sent Nov 1"},
-   {"t":"Individual listing website live","s":"4283turkeycreek.com"},
-   {"t":"Meta listing ad launched","s":"Facebook + Instagram"}
-  ]}
+ "socialNote": "Reach from every Facebook and Instagram post, boost, ad, Reel and YouTube video adds in as each reports",
+ "videoAssets": 7,
+ "photoCount": 67,
+ "phases": [
+  {
+   "n": "Before launch: pre-market",
+   "d": "Sept 18 – Oct 28",
+   "items": [
+    {
+     "t": "Porch Sitting at Turkey Creek — Meta ad campaign",
+     "s": "Facebook + Instagram, the full pre-market run"
+    },
+    {
+     "t": "Turkey Teaser Post — Meta ad campaign",
+     "s": "Facebook + Instagram, the full pre-market run"
+    },
+    {
+     "t": "7 personal agent post campaigns",
+     "s": "Aaron's own posts and photos"
+    },
+    {
+     "t": "Coming-soon office email + pre-listing relocation agent email",
+     "s": "315 recipients, before the public saw it"
+    }
+   ]
+  },
+  {
+   "n": "Full launch",
+   "d": "Oct 29 – today",
+   "items": [
+    {
+     "t": "13 branded marketing pieces created",
+     "s": "Social, ads, email, video, website, mail"
+    },
+    {
+     "t": "Email to 3,538 Middle Tennessee agents",
+     "s": "Sent Nov 2"
+    },
+    {
+     "t": "Email to 1,320 out-of-state relocation agents",
+     "s": "Sent Nov 1"
+    },
+    {
+     "t": "Individual listing website live",
+     "s": "4283turkeycreek.com"
+    },
+    {
+     "t": "Meta listing ad launched",
+     "s": "Facebook + Instagram"
+    }
+   ]
+  }
  ],
- "actions":{"pre":11,"launch":13},
- "_note":"pre = 2 Meta campaigns + 7 agent post campaigns + office email + pre-listing email",
- "badges":[
-  {"t":"Professional photography","s":"67 photos"},
-  {"t":"Drone photography","s":"Aerials of the land"},
-  {"t":"Cinematic drone clips","s":"Short aerial video of the property"},
-  {"t":"Custom floorplan drawing","s":"Measured layout of the home"},
-  {"t":"Video created","s":"Reel + YouTube video"},
-  {"t":"Individual website","s":"4283turkeycreek.com"},
-  {"t":"Relocation audience targeted","s":"Out-of-state relocation agents"},
-  {"t":"A.I.-assisted SEO marketing","s":"Every piece audited"},
-  {"t":"Pre-market campaign","s":"Started Sept 18"},
-  {"t":"Paid Meta advertising","s":"Facebook + Instagram"},
-  {"t":"Agent-to-agent email","s":"Tennessee + out of state"},
-  {"t":"Google Business Profile","s":"Listing post published"},
-  {"t":"Direct-mail postcard","s":"Custom designed"},
-  {"t":"Custom brand design","s":"No stock templates"}
+ "actions": {
+  "pre": 11,
+  "launch": 13
+ },
+ "_note": "pre = 2 Meta campaigns + 7 agent post campaigns + office email + pre-listing email",
+ "badges": [
+  {
+   "t": "Professional photography",
+   "s": "67 photos"
+  },
+  {
+   "t": "Drone photography",
+   "s": "Aerials of the land"
+  },
+  {
+   "t": "Cinematic drone clips",
+   "s": "Short aerial video of the property"
+  },
+  {
+   "t": "Custom floorplan drawing",
+   "s": "Measured layout of the home"
+  },
+  {
+   "t": "Video created",
+   "s": "Reel + YouTube video"
+  },
+  {
+   "t": "Individual website",
+   "s": "4283turkeycreek.com"
+  },
+  {
+   "t": "Relocation audience targeted",
+   "s": "Out-of-state relocation agents"
+  },
+  {
+   "t": "A.I.-assisted SEO marketing",
+   "s": "Every piece audited"
+  },
+  {
+   "t": "Pre-market campaign",
+   "s": "Started Sept 18"
+  },
+  {
+   "t": "Paid Meta advertising",
+   "s": "Facebook + Instagram"
+  },
+  {
+   "t": "Agent-to-agent email",
+   "s": "Tennessee + out of state"
+  },
+  {
+   "t": "Google Business Profile",
+   "s": "Listing post published"
+  },
+  {
+   "t": "Direct-mail postcard",
+   "s": "Custom designed"
+  },
+  {
+   "t": "Custom brand design",
+   "s": "No stock templates"
+  }
  ],
- "channels":[
-  {"p":"meta","n":"Meta Ads","w":"Porch Sitting at Turkey Creek","st":"live","sl":"Running","r":26377,"rl":"reached","th":"front"},
-  {"p":"meta","n":"Meta Ads","w":"Turkey Teaser Post","st":"done","sl":"Pre-market","r":27144,"rl":"reached","th":"pasture"},
-  {"p":"fb","n":"Facebook","w":"7 agent post campaigns","st":"done","sl":"Pre-market","th":"water"},
-  {"p":"mail","n":"Email","w":"Coming-soon office email + pre-listing relocation agent email","st":"done","sl":"Pre-market","r":315,"rl":"recipients","th":"gate"},
-  {"p":"fb","n":"Facebook","w":"Just Listed post","st":"live","sl":"Published","th":"s_just"},
-  {"p":"ig","n":"Instagram","w":"Just Listed post","st":"live","sl":"Published","th":"s_just"},
-  {"p":"ig","n":"Instagram","w":"Story","st":"live","sl":"Published","th":"s_story"},
-  {"p":"meta","n":"Meta Ads","w":"Retargeting ads","st":"live","sl":"Running","th":"s_meta"},
-  {"p":"meta","n":"Meta Ads","w":"Facebook + Instagram listing ad","st":"live","sl":"Running","r":1034,"rl":"reached","th":"s_meta"},
-  {"p":"fb","n":"Facebook","w":"Carousel","st":"sched","sl":"Nov 5","th":"s_carousel"},
-  {"p":"ig","n":"Instagram","w":"Reel","st":"done","sl":"Created","th":"sunroom"},
-  {"p":"yt","n":"YouTube","w":"Listing video","st":"done","sl":"Created","th":"kitchen"},
-  {"p":"g","n":"Google","w":"Business Profile post","st":"live","sl":"Published","th":"s_gbp"},
-  {"p":"g","n":"Google Ads","w":"Search ad","st":"done","sl":"Built","th":"s_gad"},
-  {"p":"in","n":"LinkedIn","w":"Agent & relocation post","st":"live","sl":"Published","th":"s_li"},
-  {"p":"mc","n":"Mailchimp","w":"Middle Tennessee agent email","st":"live","sl":"Sent","r":3538,"rl":"agents","th":"fire"},
-  {"p":"mc","n":"Mailchimp","w":"Out-of-state relocation agent email","st":"live","sl":"Sent","r":1320,"rl":"agents","th":"water"},
-  {"p":"mc","n":"Mailchimp","w":"Middle Tennessee agent email, second send","st":"sched","sl":"Scheduled","th":"primary"},
-  {"p":"mc","n":"Mailchimp","w":"All out-of-state agents email","st":"sched","sl":"Up next · 13,900+ agents","th":"shop"},
-  {"p":"web","n":"Listing Website","w":"4283turkeycreek.com","st":"live","sl":"Live","th":"gate"},
-  {"p":"aa","n":"1aaronscott.com","w":"Featured listing on Aaron's website","st":"live","sl":"Featured","th":"drone"},
-  {"p":"aa","n":"Blog","w":"SEO feature post on 1aaronscott.com","st":"live","sl":"Published","th":"water"},
-  {"p":"mail","n":"Postcard","w":"Custom direct mail","st":"done","sl":"Designed","th":"s_post"}
+ "channels": [
+  {
+   "p": "meta",
+   "n": "Meta Ads",
+   "w": "Porch Sitting at Turkey Creek",
+   "st": "live",
+   "sl": "Running",
+   "r": 26377,
+   "rl": "reached",
+   "th": "front"
+  },
+  {
+   "p": "meta",
+   "n": "Meta Ads",
+   "w": "Turkey Teaser Post",
+   "st": "done",
+   "sl": "Pre-market",
+   "r": 27144,
+   "rl": "reached",
+   "th": "pasture"
+  },
+  {
+   "p": "fb",
+   "n": "Facebook",
+   "w": "7 agent post campaigns",
+   "st": "done",
+   "sl": "Pre-market",
+   "th": "water"
+  },
+  {
+   "p": "mail",
+   "n": "Email",
+   "w": "Coming-soon office email + pre-listing relocation agent email",
+   "st": "done",
+   "sl": "Pre-market",
+   "r": 315,
+   "rl": "recipients",
+   "th": "gate"
+  },
+  {
+   "p": "fb",
+   "n": "Facebook",
+   "w": "Just Listed post",
+   "st": "live",
+   "sl": "Published",
+   "th": "s_just"
+  },
+  {
+   "p": "ig",
+   "n": "Instagram",
+   "w": "Just Listed post",
+   "st": "live",
+   "sl": "Published",
+   "th": "s_just"
+  },
+  {
+   "p": "ig",
+   "n": "Instagram",
+   "w": "Story",
+   "st": "live",
+   "sl": "Published",
+   "th": "s_story"
+  },
+  {
+   "p": "meta",
+   "n": "Meta Ads",
+   "w": "Retargeting ads",
+   "st": "live",
+   "sl": "Running",
+   "th": "s_meta"
+  },
+  {
+   "p": "meta",
+   "n": "Meta Ads",
+   "w": "Facebook + Instagram listing ad",
+   "st": "live",
+   "sl": "Running",
+   "r": 1034,
+   "rl": "reached",
+   "th": "s_meta"
+  },
+  {
+   "p": "fb",
+   "n": "Facebook",
+   "w": "Carousel",
+   "st": "sched",
+   "sl": "Nov 5",
+   "th": "s_carousel"
+  },
+  {
+   "p": "ig",
+   "n": "Instagram",
+   "w": "Reel",
+   "st": "done",
+   "sl": "Created",
+   "th": "sunroom"
+  },
+  {
+   "p": "yt",
+   "n": "YouTube",
+   "w": "Listing video",
+   "st": "done",
+   "sl": "Created",
+   "th": "kitchen"
+  },
+  {
+   "p": "g",
+   "n": "Google",
+   "w": "Business Profile post",
+   "st": "live",
+   "sl": "Published",
+   "th": "s_gbp"
+  },
+  {
+   "p": "g",
+   "n": "Google Ads",
+   "w": "Search ad",
+   "st": "done",
+   "sl": "Built",
+   "th": "s_gad"
+  },
+  {
+   "p": "in",
+   "n": "LinkedIn",
+   "w": "Agent & relocation post",
+   "st": "live",
+   "sl": "Published",
+   "th": "s_li"
+  },
+  {
+   "p": "mc",
+   "n": "Mailchimp",
+   "w": "Middle Tennessee agent email",
+   "st": "live",
+   "sl": "Sent",
+   "r": 3538,
+   "rl": "agents",
+   "th": "fire"
+  },
+  {
+   "p": "mc",
+   "n": "Mailchimp",
+   "w": "Out-of-state relocation agent email",
+   "st": "live",
+   "sl": "Sent",
+   "r": 1320,
+   "rl": "agents",
+   "th": "water"
+  },
+  {
+   "p": "mc",
+   "n": "Mailchimp",
+   "w": "Middle Tennessee agent email, second send",
+   "st": "sched",
+   "sl": "Scheduled",
+   "th": "primary"
+  },
+  {
+   "p": "mc",
+   "n": "Mailchimp",
+   "w": "All out-of-state agents email",
+   "st": "sched",
+   "sl": "Up next · 13,900+ agents",
+   "th": "shop"
+  },
+  {
+   "p": "web",
+   "n": "Listing Website",
+   "w": "4283turkeycreek.com",
+   "st": "live",
+   "sl": "Live",
+   "th": "gate"
+  },
+  {
+   "p": "aa",
+   "n": "1aaronscott.com",
+   "w": "Featured listing on Aaron's website",
+   "st": "live",
+   "sl": "Featured",
+   "th": "drone"
+  },
+  {
+   "p": "aa",
+   "n": "Blog",
+   "w": "SEO feature post on 1aaronscott.com",
+   "st": "live",
+   "sl": "Published",
+   "th": "water"
+  },
+  {
+   "p": "mail",
+   "n": "Postcard",
+   "w": "Custom direct mail",
+   "st": "done",
+   "sl": "Designed",
+   "th": "s_post"
+  }
  ],
- "snips":[
-  {"k":"s_just","t":"Just Listed","w":"Facebook + Instagram"},
-  {"k":"s_carousel","t":"Carousel","w":"Instagram"},
-  {"k":"s_story","t":"Story","w":"Instagram"},
-  {"k":"s_meta","t":"Meta Ad","w":"Facebook + Instagram"},
-  {"k":"s_gbp","t":"Business Profile","w":"Google"},
-  {"k":"s_gad","t":"Search Ad","w":"Google"},
-  {"k":"s_li","t":"LinkedIn Post","w":"LinkedIn"},
-  {"k":"s_post","t":"Postcard","w":"Direct mail"},
-  {"k":"kitchen","t":"Listing Email","w":"Middle Tennessee agents"},
-  {"k":"water","t":"Relocation Agent Email","w":"Out-of-state agents"},
-  {"k":"gate","t":"Listing Website","w":"4283turkeycreek.com"},
-  {"k":"sunroom","t":"Reel","w":"Instagram + Facebook"},
-  {"k":"front","t":"YouTube Video","w":"YouTube"}
+ "snips": [
+  {
+   "k": "s_just",
+   "t": "Just Listed",
+   "w": "Facebook + Instagram"
+  },
+  {
+   "k": "s_carousel",
+   "t": "Carousel",
+   "w": "Instagram"
+  },
+  {
+   "k": "s_story",
+   "t": "Story",
+   "w": "Instagram"
+  },
+  {
+   "k": "s_meta",
+   "t": "Meta Ad",
+   "w": "Facebook + Instagram"
+  },
+  {
+   "k": "s_gbp",
+   "t": "Business Profile",
+   "w": "Google"
+  },
+  {
+   "k": "s_gad",
+   "t": "Search Ad",
+   "w": "Google"
+  },
+  {
+   "k": "s_li",
+   "t": "LinkedIn Post",
+   "w": "LinkedIn"
+  },
+  {
+   "k": "s_post",
+   "t": "Postcard",
+   "w": "Direct mail"
+  },
+  {
+   "k": "kitchen",
+   "t": "Listing Email",
+   "w": "Middle Tennessee agents"
+  },
+  {
+   "k": "water",
+   "t": "Relocation Agent Email",
+   "w": "Out-of-state agents"
+  },
+  {
+   "k": "gate",
+   "t": "Listing Website",
+   "w": "4283turkeycreek.com"
+  },
+  {
+   "k": "sunroom",
+   "t": "Reel",
+   "w": "Instagram + Facebook"
+  },
+  {
+   "k": "front",
+   "t": "YouTube Video",
+   "w": "YouTube"
+  }
  ],
- "timeline":[
-  {"d":"Scheduled","t":"Middle Tennessee agent email, second send to 3,500+ agents","next":true},
-  {"d":"Up next","t":"Email to all 13,900+ out-of-state relocation agents (Los Angeles, Ventura, Orange County, San Diego)","next":true},
-  {"d":"2026-11-05","t":"Carousel post across Facebook and Instagram","next":true},
-  {"d":"Ongoing","t":"Agent social post campaign: Aaron's own posts and photos"},
-  {"d":"2026-11-03","t":"Meta listing ad launched on Facebook and Instagram"},
-  {"d":"2026-11-03","t":"LinkedIn post to agents and relocating professionals"},
-  {"d":"2026-11-02","t":"Email sent to 3,538 Middle Tennessee agents"},
-  {"d":"2026-11-01","t":"Email sent to 1,320 out-of-state relocation agents"},
-  {"d":"2026-11-01","t":"Listing website went live at 4283turkeycreek.com"},
-  {"d":"2026-11-01","t":"Instagram Story and Google Business Profile post published"},
-  {"d":"2026-10-31","t":"Custom postcard designed and proofed"},
-  {"d":"2026-10-29","t":"Just Listed post published on Facebook and Instagram"},
-  {"d":"2026-10-29","t":"Reel and YouTube video produced from the listing photos"},
-  {"d":"2026-10-29","t":"13 branded marketing pieces created and reviewed"},
-  {"d":"Pre-market","t":"Coming-soon office email and pre-listing relocation agent email, 315 recipients"},
-  {"d":"Pre-market","t":"7 personal agent post campaigns"},
-  {"d":"2026-09-18","t":"Pre-market Meta campaigns began: Porch Sitting and the Turkey Teaser Post"}
+ "timeline": [
+  {
+   "d": "Scheduled",
+   "t": "Middle Tennessee agent email, second send to 3,500+ agents",
+   "next": true
+  },
+  {
+   "d": "Up next",
+   "t": "Email to all 13,900+ out-of-state relocation agents (Los Angeles, Ventura, Orange County, San Diego)",
+   "next": true
+  },
+  {
+   "d": "2026-11-05",
+   "t": "Carousel post across Facebook and Instagram",
+   "next": true
+  },
+  {
+   "d": "Ongoing",
+   "t": "Agent social post campaign: Aaron's own posts and photos"
+  },
+  {
+   "d": "2026-11-03",
+   "t": "Meta listing ad launched on Facebook and Instagram"
+  },
+  {
+   "d": "2026-11-03",
+   "t": "LinkedIn post to agents and relocating professionals"
+  },
+  {
+   "d": "2026-11-02",
+   "t": "Email sent to 3,538 Middle Tennessee agents"
+  },
+  {
+   "d": "2026-11-01",
+   "t": "Email sent to 1,320 out-of-state relocation agents"
+  },
+  {
+   "d": "2026-11-01",
+   "t": "Listing website went live at 4283turkeycreek.com"
+  },
+  {
+   "d": "2026-11-01",
+   "t": "Instagram Story and Google Business Profile post published"
+  },
+  {
+   "d": "2026-10-31",
+   "t": "Custom postcard designed and proofed"
+  },
+  {
+   "d": "2026-10-29",
+   "t": "Just Listed post published on Facebook and Instagram"
+  },
+  {
+   "d": "2026-10-29",
+   "t": "Reel and YouTube video produced from the listing photos"
+  },
+  {
+   "d": "2026-10-29",
+   "t": "13 branded marketing pieces created and reviewed"
+  },
+  {
+   "d": "Pre-market",
+   "t": "Coming-soon office email and pre-listing relocation agent email, 315 recipients"
+  },
+  {
+   "d": "Pre-market",
+   "t": "7 personal agent post campaigns"
+  },
+  {
+   "d": "2026-09-18",
+   "t": "Pre-market Meta campaigns began: Porch Sitting and the Turkey Teaser Post"
+  }
  ],
- "tracked":["Google Analytics","Google Search Console","Google Ads dashboard","Google Business Profile Insights","GoDaddy Website Analytics","Cloudflare Web Analytics","Meta Ads Manager","Meta Business Suite Insights","Instagram Insights","YouTube Studio Analytics","LinkedIn Analytics","Mailchimp Reports","Buffer Analytics"]
+ "tracked": [
+  "Google Analytics",
+  "Google Search Console",
+  "Google Ads dashboard",
+  "Google Business Profile Insights",
+  "GoDaddy Website Analytics",
+  "Cloudflare Web Analytics",
+  "Meta Ads Manager",
+  "Meta Business Suite Insights",
+  "Instagram Insights",
+  "YouTube Studio Analytics",
+  "LinkedIn Analytics",
+  "Mailchimp Reports",
+  "Buffer Analytics"
+ ],
+ "heroStart": "kitchen",
+ "featurePair": [
+  "primary",
+  "kitchen"
+ ],
+ "photoLabel": "67 photos · drone · video",
+ "domain": "4283turkeycreek.com"
 }
 </script>
 <script id="imgs" type="application/json">{"front": "img/front.jpg", "gate": "img/gate.jpg", "pasture": "img/pasture.jpg", "water": "img/water.jpg", "fire": "img/fire.jpg", "kitchen": "img/kitchen.jpg", "primary": "img/primary.jpg", "sunroom": "img/sunroom.jpg", "shop": "img/shop.jpg", "back": "img/back.jpg", "s_carousel": "img/s_carousel.jpg", "s_gbp": "img/s_gbp.jpg", "s_gad": "img/s_gad.jpg", "s_just": "img/s_just.jpg", "s_li": "img/s_li.jpg", "s_meta": "img/s_meta.jpg", "s_post": "img/s_post.jpg", "s_story": "img/s_story.jpg", "cb1": "img/cb1.png", "cb2": "img/cb2.png", "drone": "img/drone.jpg", "aerial": "img/aerial.jpg", "seal": "img/seal.png", "wordmark": "img/wordmark.png"}</script>
@@ -376,7 +822,8 @@ const D=JSON.parse(document.getElementById('data').textContent);
 const I=JSON.parse(document.getElementById('imgs').textContent);
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const lk=s=>esc(s).replace(/(?<![\w.-])(4283turkeycreek\.com|1aaronscott\.com)(?![\w-])/g,'<a href="https://$1" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">$1</a>');
+const LKRE=new RegExp('(?<![\\w.-])('+[D.domain,'1aaronscott.com'].filter(Boolean).map(x=>x.replace(/[.]/g,'\\.')).join('|')+')(?![\\w-])','g');
+const lk=s=>esc(s).replace(LKRE,'<a href="https://$1" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">$1</a>');
 const bg=k=>I[k]?"url('"+I[k]+"')":'none';
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const today=new Date(); const t0=new Date(D.start+'T00:00:00');
@@ -388,18 +835,20 @@ const fmt=d=>isDate(d)?new Date(d+'T12:00:00').toLocaleDateString('en-US',{month
 function countUp(el,v,dur){ if(reduce){el.firstChild.nodeValue=v.toLocaleString();return}
   const st=performance.now();(function f(n){const k=Math.min(1,(n-st)/dur),e=1-Math.pow(1-k,3);el.firstChild.nodeValue=Math.round(v*e).toLocaleString();if(k<1)requestAnimationFrame(f)})(st)}
 
-$('addr').textContent=D.address; $('city').textContent=D.city;
+$('addr').textContent=D.address; $('city').textContent=D.city; document.title='Your Marketing Report · '+D.address;
+const hasPre=!!D.premarketStart; const preEnd=new Date(t0.getTime()-864e5).toISOString().slice(0,10);
+$('sinceLab').textContent=fmt(D.start)+' – today';
 $('upd').textContent='Updated '+fmt(D.updatedAt);
 $('day').textContent='Day '+day+' since launch';
 const liveN=D.channels.filter(c=>c.st==='live').length, schedN=D.channels.filter(c=>c.st==='sched').length;
-$('bandtxt').textContent=liveN+' channels running now · '+schedN+' more coming · pre-market since Sept 18';
+$('bandtxt').textContent=liveN+' channels running now'+(schedN?' · '+schedN+' more coming':'')+(hasPre?' · pre-market since '+fmt(D.premarketStart):'');
 $('voice').textContent=D.voices[seed%D.voices.length];
 ['seal','seal2'].forEach(id=>{$(id).src=I.seal});
 ['wmTop','wmFoot'].forEach(id=>{$(id).src=I.wordmark});
 $('cb').innerHTML='<img src="'+I.cb1+'" alt="Coldwell Banker Southern Realty"><img src="'+I.cb2+'" alt="Coldwell Banker Realty">';
 
 // hero: different starting photo each day; caption swaps when the new photo is fully in
-const ph=D.photos.filter(p=>p.k==='kitchen').concat(rot(D.photos.filter(p=>p.k!=='kitchen'),seed)); let hi=0,flip=false;
+const hk=D.heroStart||(D.photos[0]&&D.photos[0].k); const ph=D.photos.filter(p=>p.k===hk).concat(rot(D.photos.filter(p=>p.k!==hk),seed)); let hi=0,flip=false;
 function hero(){ const p=ph[hi%ph.length]; const a=flip?$('ph2'):$('ph1'), b=flip?$('ph1'):$('ph2');
   a.style.backgroundImage=bg(p.k); const cap=$('cap'); cap.style.opacity=0;
   requestAnimationFrame(()=>{a.classList.remove('off'); b.classList.add('off');});
@@ -407,9 +856,9 @@ function hero(){ const p=ph[hi%ph.length]; const a=flip?$('ph2'):$('ph1'), b=fli
 hero(); if(!reduce) setInterval(hero,7000);
 
 // total reach
-const total=D.reach.reduce((s,r)=>s+r.v,0);
+const total=D.reach.reduce((s,r)=>s+(r.v||0),0);
 countUp($('reachBig'),total,1800);
-$('reachParts').innerHTML=D.reach.map(r=>'<div><b class="num">'+r.v.toLocaleString()+'</b>'+esc(r.l)+'</div>').join('');
+$('reachParts').innerHTML=D.reach.map(r=>'<div><b class="num">'+(r.v||0).toLocaleString()+'</b>'+esc(r.l)+'</div>').join('');
 const soc=D.social.reduce((s,r)=>s+(r.v||0),0);
 if(soc>0){countUp($('socBig'),soc,2000);}else{$('socBig').firstChild.nodeValue='Counting';}
 $('socParts').innerHTML=D.social.map(r=>'<div><b class="num'+(r.v==null?' pend':'')+'">'+(r.v==null?'Counting':(r.est?'est. ':'')+r.v.toLocaleString())+'</b>'+esc(r.l)+'</div>').join('')+(D.social.some(r=>r.est)?'<div class="estnote">Measured reach from Meta, plus an A.I. estimate for organic posts until their insights report</div>':'');
@@ -429,9 +878,9 @@ document.querySelectorAll('.stat .v').forEach((el,i)=>countUp(el,stats[i].v,1400
 const chk='<span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="#0B1A33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
 $('phases').innerHTML=D.phases.slice().reverse().map(p=>'<div class="phase"><h3>'+esc(p.n)+'</h3><div class="lab when">'+esc(p.d)+'</div><ul>'+p.items.map(i=>'<li>'+chk+'<div><b>'+esc(i.t)+'</b><small>'+lk(i.s)+'</small></div></li>').join('')+'</ul></div>').join('');
 
-const F=D.feature, bp=['primary','kitchen'].map(k=>D.photos.find(p=>p.k===k));
+const F=D.feature||{k:(D.photos[0]||{}).k,c:'',line:''}, bp=(D.featurePair||D.photos.filter(p=>p.k!==F.k).slice(0,2).map(p=>p.k)).map(k=>D.photos.find(p=>p.k===k)).filter(Boolean);
 $('bigph').innerHTML='<div class="feat" style="background-image:'+bg(F.k)+'" role="img" aria-label="'+esc(F.c)+'"><span><b>'+esc(F.c)+'</b><em>'+esc(F.line)+'</em></span></div>'+bp.map(p=>'<div style="background-image:'+bg(p.k)+'" role="img" aria-label="'+esc(p.c)+'"><span>'+esc(p.c)+'</span></div>').join('');
-$('photoLab').textContent=D.photoCount+' photos · drone · video';
+$('photoLab').textContent=D.photoLabel||(D.photoCount+' photos');
 
 $('badges').innerHTML=D.badges.map(b=>'<div class="badge">'+chk+'<div><b>'+esc(b.t)+'</b><small>'+lk(b.s)+'</small></div></div>').join('');
 $('badgeLab').textContent=D.badges.length+' completed';
@@ -447,7 +896,7 @@ $('snips').innerHTML=sn.map((s,i)=>'<div class="snip" style="background-image:'+
 $('snipLab').textContent=D.snips.length+' pieces';
 
 const tlMain=D.timeline.filter(e=>!(e.d==='Pre-market'||e.d===D.premarketStart)),tlPre=D.timeline.filter(e=>e.d==='Pre-market'||e.d===D.premarketStart);
-$('tl').innerHTML=tlMain.concat([{d:'Before launch',t:'Pre-market campaign, Sept 18 – Oct 28',hdr:true}],tlPre.map(e=>({d:'Pre-market',t:e.t}))).map(e=>'<li class="'+(e.next?'next':'')+(e.hdr||e.d==='Pre-market'?' pre':'')+(e.hdr?' hdr':'')+'"><div class="d">'+(e.next&&isDate(e.d)?'Up next · ':'')+esc(fmt(e.d))+'</div><div>'+lk(e.t)+'</div></li>').join('');
+$('tl').innerHTML=tlMain.concat(tlPre.length?[{d:'Before launch',t:'Pre-market campaign, '+fmt(D.premarketStart||'')+' – '+fmt(preEnd),hdr:true}]:[],tlPre.map(e=>({d:'Pre-market',t:e.t}))).map(e=>'<li class="'+(e.next?'next':'')+(e.hdr||e.d==='Pre-market'?' pre':'')+(e.hdr?' hdr':'')+'"><div class="d">'+(e.next&&isDate(e.d)?'Up next · ':'')+esc(fmt(e.d))+'</div><div>'+lk(e.t)+'</div></li>').join('');
 $('tracked').innerHTML=D.tracked.map(t=>'<span>'+esc(t)+'</span>').join('');
 })();
 </script>
