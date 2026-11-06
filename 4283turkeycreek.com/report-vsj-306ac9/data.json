@@ -604,6 +604,10 @@
   "drone": "img/drone.jpg",
   "aerial": "img/aerial.jpg",
   "seal": "img/seal.png",
-  "wordmark": "img/wordmark.png"
+  "wordmark": "img/wordmark.png",
+  "s_pc1": "img/s_pc1.jpg",
+  "s_pcmap": "img/s_pcmap.jpg",
+  "s_pcmoon": "img/s_pcmoon.jpg",
+  "s_pcnb": "img/s_pcnb.jpg"
  }
 }
