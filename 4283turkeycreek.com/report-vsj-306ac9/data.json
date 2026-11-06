@@ -1,7 +1,7 @@
 {
  "_note": "pre = 2 Meta campaigns + 7 agent post campaigns + office email + pre-listing email",
  "actions": {
-  "launch": 20,
+  "launch": 21,
   "pre": 11
  },
  "address": "4283 Turkey Creek Rd",
@@ -105,7 +105,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 12,
+   "r": 73,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -115,7 +115,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 1,
+   "r": 17,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -307,10 +307,12 @@
   {
    "n": "Mailchimp",
    "p": "mc",
-   "sl": "Scheduled",
-   "st": "sched",
+   "r": 3440,
+   "rl": "agents",
+   "sl": "Sent Nov 6",
+   "st": "live",
    "th": "primary",
-   "w": "Middle Tennessee agent email, second send"
+   "w": "Middle Tennessee agent email, second send (New2Market)"
   },
   {
    "n": "Mailchimp",
@@ -397,6 +399,10 @@
     {
      "s": "Sent Nov 2",
      "t": "Email to 3,538 Middle Tennessee agents"
+    },
+    {
+     "s": "Sent Nov 6",
+     "t": "New2Market email to 3,440 Middle Tennessee agents"
     },
     {
      "s": "Sent Nov 1",
@@ -492,7 +498,7 @@
  "reach": [
   {
    "l": "Middle Tennessee agents",
-   "v": 3538
+   "v": 6978
   },
   {
    "l": "Out-of-state relocation agents",
@@ -504,7 +510,7 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-06T16:38:34.000Z",
+ "rev": "2026-11-06T17:36:00.000Z",
  "snips": [
   {
    "k": "s_pc1",
@@ -619,11 +625,11 @@
   },
   {
    "l": "Postcard campaign ads (18 miles around Spring Hill)",
-   "v": 12
+   "v": 73
   },
   {
    "l": "Postcard retargeting ads (Tennessee contacts)",
-   "v": 1
+   "v": 17
   }
  ],
  "socialNote": "Reach from every Facebook and Instagram post, boost, ad, Reel and YouTube video adds in as each reports",
@@ -651,6 +657,10 @@
   },
   {
    "d": "2026-11-06",
+   "t": "New2Market email sent to 3,440 Middle Tennessee agents"
+  },
+  {
+   "d": "2026-11-06",
    "t": "Postcard collection carousel published on Facebook and Instagram"
   },
   {
@@ -664,11 +674,6 @@
   {
    "d": "2026-11-06",
    "t": "The Turkey Creek Postcard Collection: 13 original vintage-style postcards designed"
-  },
-  {
-   "d": "Scheduled",
-   "next": true,
-   "t": "Middle Tennessee agent email, second send to 3,500+ agents"
   },
   {
    "d": "Up next",
