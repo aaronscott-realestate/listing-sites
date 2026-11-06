@@ -1,7 +1,7 @@
 {
  "_note": "pre = 2 Meta campaigns + 7 agent post campaigns + office email + pre-listing email",
  "actions": {
-  "launch": 13,
+  "launch": 20,
   "pre": 11
  },
  "address": "4283 Turkey Creek Rd",
@@ -61,9 +61,99 @@
   {
    "s": "No stock templates",
    "t": "Custom brand design"
+  },
+  {
+   "s": "13 original designs",
+   "t": "Vintage postcard collection"
+  },
+  {
+   "s": "16 local groups, rotating sets",
+   "t": "Community group outreach"
+  },
+  {
+   "s": "Tennessee audience that already knows Aaron",
+   "t": "Retargeting campaign"
   }
  ],
  "channels": [
+  {
+   "n": "Facebook",
+   "p": "fb",
+   "sl": "Published Nov 6",
+   "st": "live",
+   "th": "s_pc1",
+   "w": "Postcard collection carousel"
+  },
+  {
+   "n": "Instagram",
+   "p": "ig",
+   "sl": "Published Nov 6",
+   "st": "live",
+   "th": "s_pc1",
+   "w": "Postcard collection carousel"
+  },
+  {
+   "n": "Facebook Groups",
+   "p": "fb",
+   "r": 860000,
+   "rl": "group members",
+   "sl": "Posted Nov 6",
+   "st": "live",
+   "th": "s_pcmap",
+   "w": "Postcard sets in 16 local community and real estate groups"
+  },
+  {
+   "n": "Meta Ads",
+   "p": "meta",
+   "r": 12,
+   "rl": "reached",
+   "sl": "Running",
+   "st": "live",
+   "th": "s_pcmoon",
+   "w": "Postcard campaign: Feed, Reels and Stories, 18 miles around Spring Hill"
+  },
+  {
+   "n": "Meta Ads",
+   "p": "meta",
+   "r": 1,
+   "rl": "reached",
+   "sl": "Running",
+   "st": "live",
+   "th": "s_pcnb",
+   "w": "Postcard retargeting: Tennessee contacts and page engagers"
+  },
+  {
+   "n": "Facebook",
+   "p": "fb",
+   "sl": "Through Nov 20",
+   "st": "sched",
+   "th": "s_pcmoon",
+   "w": "Postcard Reels and Stories, new set every few days"
+  },
+  {
+   "n": "Facebook Groups",
+   "p": "fb",
+   "sl": "Nov 11 · Nov 18",
+   "st": "sched",
+   "th": "s_pcnb",
+   "w": "Second and third rounds, a new set in each group"
+  },
+  {
+   "n": "YouTube",
+   "p": "yt",
+   "sl": "Thanksgiving week",
+   "st": "sched",
+   "th": "s_pc1",
+   "w": "Full postcard collection video"
+  },
+  {
+   "n": "Google Ads",
+   "p": "g",
+   "sl": "Thanksgiving week",
+   "st": "sched",
+   "th": "s_pcmap",
+   "w": "YouTube video ad"
+  },
   {
    "n": "Meta Ads",
    "p": "meta",
@@ -322,6 +412,32 @@
     }
    ],
    "n": "Full launch"
+  },
+  {
+   "d": "Nov 6 – Thanksgiving week",
+   "items": [
+    {
+     "s": "Original artwork from the listing photos, one card per room, view and story",
+     "t": "13 custom vintage-style postcards designed"
+    },
+    {
+     "s": "Carousels, Reels and Stories in six rotating sets",
+     "t": "Postcard campaign live on Facebook and Instagram"
+    },
+    {
+     "s": "About 860,000 combined members across Franklin, Columbia, Spring Hill, Brentwood and Middle Tennessee",
+     "t": "Posted to 16 local community and real estate groups"
+    },
+    {
+     "s": "Everyone within 18 miles of Spring Hill, plus a Tennessee retargeting audience",
+     "t": "Two new Meta ad campaigns"
+    },
+    {
+     "s": "Premieres Thanksgiving week with a Google video ad",
+     "t": "Full-collection YouTube video"
+    }
+   ],
+   "n": "The Turkey Creek Postcard Collection"
   }
  ],
  "photoCount": 67,
@@ -388,8 +504,28 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-06T10:55:11.000Z",
+ "rev": "2026-11-06T16:38:34.000Z",
  "snips": [
+  {
+   "k": "s_pc1",
+   "t": "Postcard Collection",
+   "w": "Facebook + Instagram"
+  },
+  {
+   "k": "s_pcmoon",
+   "t": "Moonlight Postcard",
+   "w": "Reels + Stories"
+  },
+  {
+   "k": "s_pcmap",
+   "t": "Points of Interest Map",
+   "w": "Community groups"
+  },
+  {
+   "k": "s_pcnb",
+   "t": "The Neighbors Postcard",
+   "w": "Facebook + Instagram"
+  },
   {
    "k": "s_just",
    "t": "Just Listed",
@@ -480,11 +616,55 @@
   {
    "l": "Retargeting ads",
    "v": 1437
+  },
+  {
+   "l": "Postcard campaign ads (18 miles around Spring Hill)",
+   "v": 12
+  },
+  {
+   "l": "Postcard retargeting ads (Tennessee contacts)",
+   "v": 1
   }
  ],
  "socialNote": "Reach from every Facebook and Instagram post, boost, ad, Reel and YouTube video adds in as each reports",
  "start": "2026-10-29",
  "timeline": [
+  {
+   "d": "Thanksgiving week",
+   "next": true,
+   "t": "Full postcard collection premieres on YouTube with a Google video ad"
+  },
+  {
+   "d": "2026-11-18",
+   "next": true,
+   "t": "Third round of postcard posts in local community groups"
+  },
+  {
+   "d": "2026-11-11",
+   "next": true,
+   "t": "Second round of postcard posts in local community groups, a new set in each"
+  },
+  {
+   "d": "2026-11-07",
+   "next": true,
+   "t": "Postcard Reel on Facebook and Google Business Profile post"
+  },
+  {
+   "d": "2026-11-06",
+   "t": "Postcard collection carousel published on Facebook and Instagram"
+  },
+  {
+   "d": "2026-11-06",
+   "t": "Postcard sets posted in 16 local community and real estate groups"
+  },
+  {
+   "d": "2026-11-06",
+   "t": "Two new Meta postcard ad campaigns launched: local reach and Tennessee retargeting"
+  },
+  {
+   "d": "2026-11-06",
+   "t": "The Turkey Creek Postcard Collection: 13 original vintage-style postcards designed"
+  },
   {
    "d": "Scheduled",
    "next": true,
@@ -494,11 +674,6 @@
    "d": "Up next",
    "next": true,
    "t": "Email to all 13,900+ out-of-state relocation agents (Los Angeles, Ventura, Orange County, San Diego)"
-  },
-  {
-   "d": "2026-11-05",
-   "next": true,
-   "t": "Carousel post across Facebook and Instagram"
   },
   {
    "d": "Ongoing",
@@ -573,7 +748,7 @@
   "Buffer Analytics"
  ],
  "updatedAt": "2026-11-06",
- "videoAssets": 7,
+ "videoAssets": 14,
  "voices": [
   "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
   "Close to everything, yet completely private. Fifteen minutes to Columbia Square, twenty to Leipers Fork.",
