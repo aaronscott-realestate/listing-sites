@@ -105,7 +105,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 5479,
+   "r": 5818,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -115,7 +115,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 857,
+   "r": 858,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -239,8 +239,8 @@
   {
    "n": "Facebook",
    "p": "fb",
-   "sl": "Nov 5",
-   "st": "sched",
+   "sl": "Published",
+   "st": "live",
    "th": "s_carousel",
    "w": "Carousel"
   },
@@ -510,7 +510,7 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-10T11:05:00.000Z",
+ "rev": "2026-11-10T14:32:00.000Z",
  "snips": [
   {
    "k": "s_pc1",
@@ -625,11 +625,11 @@
   },
   {
    "l": "Postcard campaign ads (18 miles around Spring Hill)",
-   "v": 5479
+   "v": 5818
   },
   {
    "l": "Postcard retargeting ads (Tennessee contacts)",
-   "v": 857
+   "v": 858
   }
  ],
  "socialNote": "Reach from every Facebook and Instagram post, boost, ad, Reel and YouTube video adds in as each reports",
@@ -652,7 +652,6 @@
   },
   {
    "d": "2026-11-07",
-   "next": true,
    "t": "Postcard Reel on Facebook and Google Business Profile post"
   },
   {
@@ -752,7 +751,7 @@
   "Mailchimp Reports",
   "Buffer Analytics"
  ],
- "updatedAt": "2026-11-10",
+ "updatedAt": "2026-11-10T14:36:00.000Z",
  "videoAssets": 14,
  "voices": [
   "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
