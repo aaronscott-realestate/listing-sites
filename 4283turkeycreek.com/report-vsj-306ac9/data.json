@@ -105,7 +105,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 4442,
+   "r": 5479,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -115,7 +115,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 668,
+   "r": 857,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -219,7 +219,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 3264,
+   "r": 3643,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -229,7 +229,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 3856,
+   "r": 4675,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -510,7 +510,7 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-09T10:55:19.000Z",
+ "rev": "2026-11-10T11:05:00.000Z",
  "snips": [
   {
    "k": "s_pc1",
@@ -611,7 +611,7 @@
   },
   {
    "l": "Meta listing ads",
-   "v": 3856
+   "v": 4675
   },
   {
    "basis": "7 agent post campaigns x 450 + FB Just Listed 450 + IG Just Listed 300 + IG Story 150 + LinkedIn 300 + Google Business Profile 300 = 4,650, rounded down. Conservative per-post organic reach for an agent account; Reel and YouTube not counted until confirmed posted. Replace with Meta Insights total when Aaron sends it.",
@@ -621,15 +621,15 @@
   },
   {
    "l": "Retargeting ads",
-   "v": 3264
+   "v": 3643
   },
   {
    "l": "Postcard campaign ads (18 miles around Spring Hill)",
-   "v": 4442
+   "v": 5479
   },
   {
    "l": "Postcard retargeting ads (Tennessee contacts)",
-   "v": 668
+   "v": 857
   }
  ],
  "socialNote": "Reach from every Facebook and Instagram post, boost, ad, Reel and YouTube video adds in as each reports",
@@ -752,7 +752,7 @@
   "Mailchimp Reports",
   "Buffer Analytics"
  ],
- "updatedAt": "2026-11-09",
+ "updatedAt": "2026-11-10",
  "videoAssets": 14,
  "voices": [
   "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
