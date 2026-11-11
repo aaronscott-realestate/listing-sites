@@ -113,7 +113,7 @@ footer{margin-top:40px;text-align:center}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           Text it to Aaron
         </a>
-        <a class="mail" id="mailBtn" href="mailto:aaron@mymusiccityagent.com">or email it instead</a>
+        <a class="mail" id="mailBtn" href="mailto:aaron@mymusiccityagent.com?cc=aaronscotthq%40gmail.com">or email it instead</a>
       </div>
       <p class="fine">Your info goes only to me. No lists, no spam.</p>
     </form>
@@ -150,7 +150,7 @@ footer{margin-top:40px;text-align:center}
 
 <script>
 (function(){
-  var AARON = "+16152365108", EMAIL = "aaron@mymusiccityagent.com";
+  var AARON = "+16152365108", EMAIL = "aaron@mymusiccityagent.com", HQ = "aaronscotthq@gmail.com";
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var $ = function(id){ return document.getElementById(id); };
   var nm = $("nm"), ph = $("ph"), em = $("em"), nt = $("nt");
@@ -169,7 +169,7 @@ footer{margin-top:40px;text-align:center}
     var m = message();
     $("textBtn").href = sms(m);
     var subj = "New contact" + (nm.value.trim() ? ": " + nm.value.trim() : "");
-    $("mailBtn").href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(m);
+    $("mailBtn").href = "mailto:" + EMAIL + "?cc=" + encodeURIComponent(HQ) + "&subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(m);
     try { localStorage.setItem("as_card", JSON.stringify({n:nm.value,p:ph.value,e:em.value,t:nt.value})); } catch(_){}
   }
   try { var s = JSON.parse(localStorage.getItem("as_card")||"null"); if (s){ nm.value=s.n||""; ph.value=s.p||""; em.value=s.e||""; nt.value=s.t||""; } } catch(_){}
