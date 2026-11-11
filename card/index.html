@@ -34,12 +34,7 @@ h1{font-family:"Barlow Condensed",Arial,sans-serif;font-weight:700;text-transfor
 .ghost{background:transparent;color:var(--paper);border:1.5px solid var(--steel)}
 .ghost:active{background:var(--navy)}
 .save{margin-top:26px}
-.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
-.q{display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 4px 12px;background:var(--navy);text-decoration:none;
- font-family:"Barlow Condensed",Arial,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;font-size:13px;color:var(--paper)}
-.q svg{width:24px;height:24px;color:var(--red2)}
-.q:active{background:#1a3360}
-.lines{margin:14px 0 0;padding:0;list-style:none;font-size:15px;color:var(--lt);text-align:center;line-height:1.7}
+.lines{margin:16px 0 0;padding:0;list-style:none;font-size:15px;color:var(--lt);text-align:center;line-height:1.7}
 .lines a{text-decoration:none;color:var(--paper)}
 section.send{margin-top:38px;background:var(--navy);padding:26px 20px 22px;border-top:4px solid var(--red)}
 .k{font-family:"Barlow Condensed",Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:3px;font-size:13px;color:var(--red2)}
@@ -55,17 +50,23 @@ input::placeholder{color:var(--steel)}
 .chip[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
 .pick{margin-top:4px;font-size:16px;padding:13px}
 .acts{display:grid;gap:10px;margin-top:20px}
+.go{background:#1E9E5A;color:#fff;font-size:21px;padding:20px 14px}
+.go:active{background:#17804a}
+.or{display:flex;align-items:center;gap:12px;margin:24px 0 4px;color:var(--slate);font:600 13px "Barlow Condensed",Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}
+.or:before,.or:after{content:"";flex:1;height:1px;background:var(--steel)}
+textarea{width:100%;font:500 18px Barlow,Arial,sans-serif;padding:14px;border:1px solid var(--steel);background:var(--ink);color:#fff;border-radius:0;-webkit-appearance:none;appearance:none;resize:vertical}
+textarea:focus{outline:2px solid var(--red2);outline-offset:0;border-color:transparent}
+textarea::placeholder{color:var(--steel)}
+.mail{display:block;text-align:center;color:var(--lt);font-size:15px;padding:6px}
 .fine{font-size:13px;color:var(--slate);line-height:1.5;margin:12px 0 0;text-align:center}
 .share{margin-top:28px}
 footer{margin-top:40px;text-align:center}
 .wm{width:150px;display:block;margin:0 auto 18px}
 .cbs{display:flex;justify-content:center;align-items:center;gap:14px;margin-bottom:14px}
 .cbs img{height:30px;width:auto;opacity:.85}
+.cbs img.icon{height:24px}
 .foot{font-size:12px;color:var(--slate);line-height:1.7}
 .foot a{text-decoration:none}
-.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(30px);opacity:0;transition:.25s;background:var(--paper);color:var(--ink);
- padding:12px 18px;font:600 15px Barlow,Arial,sans-serif;max-width:90vw;text-align:center;pointer-events:none}
-.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 /* #qr view — Aaron shows this on his phone for people to scan */
 #qrview{display:none;position:fixed;inset:0;background:var(--ink);z-index:9;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
 #qrview.on{display:flex}
@@ -84,20 +85,13 @@ footer{margin-top:40px;text-align:center}
     <h1>Aaron Scott</h1>
     <div class="sub">Real Estate · Franklin · Nashville<br>Middle Tennessee &amp; California</div>
     <div class="rule"></div>
-    <p class="voice">I moved my own family here from California. Wherever you're coming from, I'm glad to be your resource.</p>
+    <p class="voice">Nice to meet you.</p>
   </header>
 
   <a class="btn primary save" href="Aaron-Scott.vcf" id="saveBtn">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
     Save my contact
   </a>
-
-  <nav class="quick">
-    <a class="q" href="tel:+16152365108"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
-    <a class="q" href="sms:+16152365108" id="qText"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text</a>
-    <a class="q" href="mailto:aaron@mymusiccityagent.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Email</a>
-    <a class="q" href="https://1aaronscott.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>Website</a>
-  </nav>
   <ul class="lines">
     <li><a href="tel:+16152365108">615-236-5108</a> · <a href="mailto:aaron@mymusiccityagent.com">aaron@mymusiccityagent.com</a></li>
     <li>LA office <a href="tel:+13106639431">310-663-9431</a> · <a href="https://1aaronscott.com">1aaronscott.com</a></li>
@@ -106,12 +100,15 @@ footer{margin-top:40px;text-align:center}
   <section class="send" id="send">
     <div class="k">Your turn</div>
     <h2>Send me your info</h2>
-    <p class="hint">One tap and it lands on my phone. Fill in what you like. Even blank, your text gives me your number.</p>
+    <p class="hint" id="hint">One tap and it lands on my phone.</p>
 
-    <button type="button" class="btn ghost pick" id="pickBtn" hidden>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
-      Fill from my contacts
+    <button type="button" class="btn go" id="goBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      Send Aaron my info
     </button>
+    <p class="fine" id="goNote">Opens a text to me. Your number comes with it.</p>
+
+    <div class="or"><span>or type it in</span></div>
 
     <form id="f" autocomplete="on" novalidate>
       <label for="nm">Name</label>
@@ -120,23 +117,14 @@ footer{margin-top:40px;text-align:center}
       <input id="ph" name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your phone">
       <label for="em">Email</label>
       <input id="em" name="email" type="email" autocomplete="email" inputmode="email" placeholder="Your email">
-      <label>I'm interested in</label>
-      <div class="chips" id="chips">
-        <button type="button" class="chip" aria-pressed="false">Buying</button>
-        <button type="button" class="chip" aria-pressed="false">Selling</button>
-        <button type="button" class="chip" aria-pressed="false">Moving to TN</button>
-        <button type="button" class="chip" aria-pressed="false">Investing</button>
-        <button type="button" class="chip" aria-pressed="false">Just connecting</button>
-      </div>
+      <label for="nt">Add a note to Aaron</label>
+      <textarea id="nt" name="note" rows="3" placeholder="Optional"></textarea>
       <div class="acts">
         <a class="btn primary" id="textBtn" href="sms:+16152365108">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           Text it to Aaron
         </a>
-        <a class="btn ghost" id="mailBtn" href="mailto:aaron@mymusiccityagent.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-          Email it instead
-        </a>
+        <a class="mail" id="mailBtn" href="mailto:aaron@mymusiccityagent.com">or email it instead</a>
       </div>
       <p class="fine">Your info goes only to me. No lists, no spam.</p>
     </form>
@@ -151,7 +139,7 @@ footer{margin-top:40px;text-align:center}
     <a href="https://1aaronscott.com"><img class="wm" src="media/1aaronscott-wordmark.png" alt="1aaronscott.com" width="150"></a>
     <div class="cbs">
       <img src="media/cb-southern-white.png" alt="Coldwell Banker Southern Realty">
-      <img src="media/cb-icon-white.png" alt="Coldwell Banker Realty">
+      <img class="icon" src="media/cb-icon-white.png" alt="Coldwell Banker Realty">
     </div>
     <div class="foot">
       Aaron Scott · Coldwell Banker Southern Realty · Coldwell Banker Realty<br>
@@ -169,26 +157,22 @@ footer{margin-top:40px;text-align:center}
   <a class="x" href="#">Close</a>
 </div>
 
-<div class="toast" id="toast"></div>
 
 <script>
 (function(){
   var AARON = "+16152365108", EMAIL = "aaron@mymusiccityagent.com";
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var $ = function(id){ return document.getElementById(id); };
-  var nm = $("nm"), ph = $("ph"), em = $("em");
-  var chosen = [];
+  var nm = $("nm"), ph = $("ph"), em = $("em"), nt = $("nt");
+  var canPick = "contacts" in navigator && "select" in navigator.contacts;
 
-  function toast(t){ var e=$("toast"); e.textContent=t; e.classList.add("on"); clearTimeout(e._t); e._t=setTimeout(function(){e.classList.remove("on");},2600); }
   function sms(body){ return "sms:" + AARON + (body ? (iOS ? "&" : "?") + "body=" + encodeURIComponent(body) : ""); }
-
   function message(){
-    var n = nm.value.trim(), p = ph.value.trim(), e = em.value.trim();
-    var lines = [];
-    lines.push(n ? "Hi Aaron, it's " + n + "." : "Hi Aaron, here's my info.");
+    var n = nm.value.trim(), p = ph.value.trim(), e = em.value.trim(), note = nt.value.trim();
+    var lines = [n ? "Hi Aaron, it's " + n + "." : "Hi Aaron, here's my info."];
     if (p) lines.push("Phone: " + p);
     if (e) lines.push("Email: " + e);
-    if (chosen.length) lines.push("Interested in: " + chosen.join(", "));
+    if (note) lines.push("Note: " + note);
     lines.push("(Sent from your contact card)");
     return lines.join("\n");
   }
@@ -197,43 +181,29 @@ footer{margin-top:40px;text-align:center}
     $("textBtn").href = sms(m);
     var subj = "New contact" + (nm.value.trim() ? ": " + nm.value.trim() : "");
     $("mailBtn").href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(m);
-    try { localStorage.setItem("as_card", JSON.stringify({n:nm.value,p:ph.value,e:em.value})); } catch(_){}
+    try { localStorage.setItem("as_card", JSON.stringify({n:nm.value,p:ph.value,e:em.value,t:nt.value})); } catch(_){}
   }
-
-  // restore anything they typed before leaving to their texting app
-  try { var s = JSON.parse(localStorage.getItem("as_card")||"null"); if (s){ nm.value=s.n||""; ph.value=s.p||""; em.value=s.e||""; } } catch(_){}
-
-  [nm, ph, em].forEach(function(i){ i.addEventListener("input", refresh); i.addEventListener("change", refresh); });
-  document.querySelectorAll(".chip").forEach(function(c){
-    c.addEventListener("click", function(){
-      var on = c.getAttribute("aria-pressed") !== "true";
-      c.setAttribute("aria-pressed", on);
-      var t = c.textContent.trim();
-      chosen = chosen.filter(function(x){ return x !== t; });
-      if (on) chosen.push(t);
-      refresh();
-    });
-  });
+  try { var s = JSON.parse(localStorage.getItem("as_card")||"null"); if (s){ nm.value=s.n||""; ph.value=s.p||""; em.value=s.e||""; nt.value=s.t||""; } } catch(_){}
+  [nm, ph, em, nt].forEach(function(i){ i.addEventListener("input", refresh); i.addEventListener("change", refresh); });
   $("f").addEventListener("submit", function(ev){ ev.preventDefault(); $("textBtn").click(); });
-  $("textBtn").addEventListener("click", function(){ refresh(); });
-  $("mailBtn").addEventListener("click", function(){ refresh(); });
+  $("textBtn").addEventListener("click", refresh);
+  $("mailBtn").addEventListener("click", refresh);
   refresh();
 
-  // Android Chrome: pick your own card from Contacts
-  if ("contacts" in navigator && "select" in navigator.contacts) {
-    var pb = $("pickBtn"); pb.hidden = false;
-    pb.addEventListener("click", function(){
-      navigator.contacts.select(["name","tel","email"], {multiple:false}).then(function(r){
-        if (!r || !r[0]) return; var c = r[0];
+  // Green one-tap button: Android picks their own card from Contacts, then opens the text; iPhone opens the text right away
+  if (canPick) $("goNote").textContent = "Tap your own name in your contacts. It opens a text to me with your info.";
+  $("goBtn").addEventListener("click", function(){
+    if (!canPick) { refresh(); location.href = sms(message()); return; }
+    navigator.contacts.select(["name","tel","email"], {multiple:false}).then(function(r){
+      if (r && r[0]) { var c = r[0];
         if (c.name && c.name[0]) nm.value = c.name[0];
         if (c.tel && c.tel[0]) ph.value = c.tel[0];
         if (c.email && c.email[0]) em.value = c.email[0];
-        refresh(); toast("Got it. Now tap Text it to Aaron.");
-      }).catch(function(){});
-    });
-  }
+      }
+      refresh(); location.href = sms(message());
+    }).catch(function(){ refresh(); location.href = sms(message()); });
+  });
 
-  // Share my card
   if (navigator.share) {
     var sb = $("shareBtn"); sb.hidden = false;
     sb.addEventListener("click", function(){
@@ -241,7 +211,6 @@ footer{margin-top:40px;text-align:center}
     });
   }
 
-  // #qr = full-screen code for Aaron to show in person
   function route(){ var on = location.hash === "#qr"; $("qrview").classList.toggle("on", on); $("qrview").setAttribute("aria-hidden", !on); }
   window.addEventListener("hashchange", route); route();
 })();
