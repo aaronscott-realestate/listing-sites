@@ -1,7 +1,7 @@
 {
  "_note": "pre = 2 Meta campaigns + 7 agent post campaigns + office email + pre-listing email",
  "actions": {
-  "launch": 21,
+  "launch": 25,
   "pre": 11
  },
  "address": "4283 Turkey Creek Rd",
@@ -79,6 +79,34 @@
   {
    "n": "Facebook",
    "p": "fb",
+   "sl": "Published Nov 10",
+   "st": "live",
+   "w": "Swim-spa post on Aaron's profile"
+  },
+  {
+   "n": "Facebook",
+   "p": "fb",
+   "sl": "Published Nov 10",
+   "st": "live",
+   "w": "Swim-spa post on the business page"
+  },
+  {
+   "n": "Google",
+   "p": "g",
+   "sl": "Published Nov 10",
+   "st": "live",
+   "w": "Swim-spa Business Profile post"
+  },
+  {
+   "n": "LinkedIn",
+   "p": "in",
+   "sl": "Published Nov 10",
+   "st": "live",
+   "w": "Swim-spa post"
+  },
+  {
+   "n": "Facebook",
+   "p": "fb",
    "sl": "Published Nov 6",
    "st": "live",
    "th": "s_pc1",
@@ -105,7 +133,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 5818,
+   "r": 6384,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -115,7 +143,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 858,
+   "r": 992,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -219,7 +247,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 3643,
+   "r": 4253,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -229,7 +257,7 @@
   {
    "n": "Meta Ads",
    "p": "meta",
-   "r": 4675,
+   "r": 5245,
    "rl": "reached",
    "sl": "Running",
    "st": "live",
@@ -510,7 +538,7 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-10T14:32:00.000Z",
+ "rev": "2026-11-10T17:00:00.000Z",
  "snips": [
   {
    "k": "s_pc1",
@@ -611,25 +639,25 @@
   },
   {
    "l": "Meta listing ads",
-   "v": 4675
+   "v": 5245
   },
   {
-   "basis": "7 agent post campaigns x 450 + FB Just Listed 450 + IG Just Listed 300 + IG Story 150 + LinkedIn 300 + Google Business Profile 300 = 4,650, rounded down. Conservative per-post organic reach for an agent account; Reel and YouTube not counted until confirmed posted. Replace with Meta Insights total when Aaron sends it.",
+   "basis": "7 agent post campaigns x 450 + FB Just Listed 450 + IG Just Listed 300 + IG Story 150 + LinkedIn 300 + Google Business Profile 300 = 4,650, rounded down. Conservative per-post organic reach for an agent account; Reel and YouTube not counted until confirmed posted. Replace with Meta Insights total when Aaron sends it. + Nov 10 swim-spa post: Facebook profile 450 + business page 450 + LinkedIn 300 + Google Business Profile 300 = 1,500.",
    "est": true,
    "l": "Organic posts, Stories & shares (A.I. estimate)",
-   "v": 4600
+   "v": 6100
   },
   {
    "l": "Retargeting ads",
-   "v": 3643
+   "v": 4253
   },
   {
    "l": "Postcard campaign ads (18 miles around Spring Hill)",
-   "v": 5818
+   "v": 6384
   },
   {
    "l": "Postcard retargeting ads (Tennessee contacts)",
-   "v": 858
+   "v": 992
   }
  ],
  "socialNote": "Reach from every Facebook and Instagram post, boost, ad, Reel and YouTube video adds in as each reports",
@@ -649,6 +677,15 @@
    "d": "2026-11-11",
    "next": true,
    "t": "Second round of postcard posts in local community groups, a new set in each"
+  },
+  {
+   "d": "Up next",
+   "next": true,
+   "t": "Email to all 13,900+ out-of-state relocation agents (Los Angeles, Ventura, Orange County, San Diego)"
+  },
+  {
+   "d": "2026-11-10",
+   "t": "Swim-spa hot tub post published on Facebook, Google Business Profile and LinkedIn"
   },
   {
    "d": "2026-11-07",
@@ -673,11 +710,6 @@
   {
    "d": "2026-11-06",
    "t": "The Turkey Creek Postcard Collection: 13 original vintage-style postcards designed"
-  },
-  {
-   "d": "Up next",
-   "next": true,
-   "t": "Email to all 13,900+ out-of-state relocation agents (Los Angeles, Ventura, Orange County, San Diego)"
   },
   {
    "d": "Ongoing",
@@ -751,7 +783,7 @@
   "Mailchimp Reports",
   "Buffer Analytics"
  ],
- "updatedAt": "2026-11-10T14:36:00.000Z",
+ "updatedAt": "2026-11-11T14:25:00.000Z",
  "videoAssets": 14,
  "voices": [
   "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
