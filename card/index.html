@@ -50,10 +50,6 @@ input::placeholder{color:var(--steel)}
 .chip[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
 .pick{margin-top:4px;font-size:16px;padding:13px}
 .acts{display:grid;gap:10px;margin-top:20px}
-.go{background:#1E9E5A;color:#fff;font-size:21px;padding:20px 14px}
-.go:active{background:#17804a}
-.or{display:flex;align-items:center;gap:12px;margin:24px 0 4px;color:var(--slate);font:600 13px "Barlow Condensed",Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}
-.or:before,.or:after{content:"";flex:1;height:1px;background:var(--steel)}
 textarea{width:100%;font:500 18px Barlow,Arial,sans-serif;padding:14px;border:1px solid var(--steel);background:var(--ink);color:#fff;border-radius:0;-webkit-appearance:none;appearance:none;resize:vertical}
 textarea:focus{outline:2px solid var(--red2);outline-offset:0;border-color:transparent}
 textarea::placeholder{color:var(--steel)}
@@ -100,15 +96,7 @@ footer{margin-top:40px;text-align:center}
   <section class="send" id="send">
     <div class="k">Your turn</div>
     <h2>Send me your info</h2>
-    <p class="hint" id="hint">One tap and it lands on my phone.</p>
-
-    <button type="button" class="btn go" id="goBtn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-      Send Aaron my info
-    </button>
-    <p class="fine" id="goNote">Opens a text to me. Your number comes with it.</p>
-
-    <div class="or"><span>or type it in</span></div>
+    <p class="hint" id="hint">Fill in what you like, then tap Text. It lands right on my phone.</p>
 
     <form id="f" autocomplete="on" novalidate>
       <label for="nm">Name</label>
@@ -164,7 +152,6 @@ footer{margin-top:40px;text-align:center}
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var $ = function(id){ return document.getElementById(id); };
   var nm = $("nm"), ph = $("ph"), em = $("em"), nt = $("nt");
-  var canPick = "contacts" in navigator && "select" in navigator.contacts;
 
   function sms(body){ return "sms:" + AARON + (body ? (iOS ? "&" : "?") + "body=" + encodeURIComponent(body) : ""); }
   function message(){
@@ -189,20 +176,6 @@ footer{margin-top:40px;text-align:center}
   $("textBtn").addEventListener("click", refresh);
   $("mailBtn").addEventListener("click", refresh);
   refresh();
-
-  // Green one-tap button: Android picks their own card from Contacts, then opens the text; iPhone opens the text right away
-  if (canPick) $("goNote").textContent = "Tap your own name in your contacts. It opens a text to me with your info.";
-  $("goBtn").addEventListener("click", function(){
-    if (!canPick) { refresh(); location.href = sms(message()); return; }
-    navigator.contacts.select(["name","tel","email"], {multiple:false}).then(function(r){
-      if (r && r[0]) { var c = r[0];
-        if (c.name && c.name[0]) nm.value = c.name[0];
-        if (c.tel && c.tel[0]) ph.value = c.tel[0];
-        if (c.email && c.email[0]) em.value = c.email[0];
-      }
-      refresh(); location.href = sms(message());
-    }).catch(function(){ refresh(); location.href = sms(message()); });
-  });
 
   if (navigator.share) {
     var sb = $("shareBtn"); sb.hidden = false;
