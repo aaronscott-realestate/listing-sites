@@ -349,6 +349,16 @@
   {
    "n": "Mailchimp",
    "p": "mc",
+   "r": 3410,
+   "rl": "agents",
+   "sl": "Sent Nov 14",
+   "st": "live",
+   "th": "pasture",
+   "w": "Middle Tennessee agent email, third send (A Morning on Five Acres)"
+  },
+  {
+   "n": "Mailchimp",
+   "p": "mc",
    "sl": "Up next · 13,900+ agents",
    "st": "sched",
    "th": "shop",
@@ -435,6 +445,10 @@
     {
      "s": "Sent Nov 6",
      "t": "New2Market email to 3,440 Middle Tennessee agents"
+    },
+    {
+     "s": "Sent Nov 14",
+     "t": "“A Morning on Five Acres” email to 3,410 Middle Tennessee agents"
     },
     {
      "s": "Sent Nov 1",
@@ -530,7 +544,7 @@
  "reach": [
   {
    "l": "Middle Tennessee agents",
-   "v": 6978
+   "v": 10388
   },
   {
    "l": "Out-of-state relocation agents",
@@ -542,7 +556,7 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-12T10:55:52.000Z",
+ "rev": "2026-11-15T17:12:52.000Z",
  "snips": [
   {
    "k": "s_swimspa",
@@ -693,6 +707,10 @@
    "t": "Email to all 13,900+ out-of-state relocation agents (Los Angeles, Ventura, Orange County, San Diego)"
   },
   {
+   "d": "2026-11-14",
+   "t": "“A Morning on Five Acres” email sent to 3,410 Middle Tennessee agents"
+  },
+  {
    "d": "2026-11-10",
    "t": "Swim-spa hot tub post published on Facebook, Google Business Profile and LinkedIn"
   },
@@ -792,7 +810,7 @@
   "Mailchimp Reports",
   "Buffer Analytics"
  ],
- "updatedAt": "2026-11-12T10:55:52.000Z",
+ "updatedAt": "2026-11-15",
  "videoAssets": 14,
  "voices": [
   "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
