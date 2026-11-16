@@ -139,8 +139,8 @@
    "p": "meta",
    "r": 6423,
    "rl": "reached",
-   "sl": "Running",
-   "st": "live",
+   "sl": "Delivered",
+   "st": "done",
    "th": "s_pcmoon",
    "w": "Postcard campaign: Feed, Reels and Stories, 18 miles around Spring Hill"
   },
@@ -149,8 +149,8 @@
    "p": "meta",
    "r": 1061,
    "rl": "reached",
-   "sl": "Running",
-   "st": "live",
+   "sl": "Delivered",
+   "st": "done",
    "th": "s_pcnb",
    "w": "Postcard retargeting: Tennessee contacts and page engagers"
   },
@@ -165,10 +165,10 @@
   {
    "n": "Facebook Groups",
    "p": "fb",
-   "sl": "Nov 11 · Nov 18",
+   "sl": "Nov 18",
    "st": "sched",
    "th": "s_pcnb",
-   "w": "Second and third rounds, a new set in each group"
+   "w": "Next round, a new set in each group"
   },
   {
    "n": "YouTube",
@@ -191,8 +191,8 @@
    "p": "meta",
    "r": 26377,
    "rl": "reached",
-   "sl": "Running",
-   "st": "live",
+   "sl": "Delivered",
+   "st": "done",
    "th": "front",
    "w": "Porch Sitting at Turkey Creek"
   },
@@ -253,8 +253,8 @@
    "p": "meta",
    "r": 4503,
    "rl": "reached",
-   "sl": "Running",
-   "st": "live",
+   "sl": "Delivered",
+   "st": "done",
    "th": "s_meta",
    "w": "Retargeting ads"
   },
@@ -263,8 +263,8 @@
    "p": "meta",
    "r": 5678,
    "rl": "reached",
-   "sl": "Running",
-   "st": "live",
+   "sl": "Delivered",
+   "st": "done",
    "th": "s_meta",
    "w": "Facebook + Instagram listing ad"
   },
@@ -556,7 +556,7 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-15T17:12:52.000Z",
+ "rev": "2026-11-16T14:17:23.000Z",
  "snips": [
   {
    "k": "s_swimspa",
@@ -694,12 +694,7 @@
   {
    "d": "2026-11-18",
    "next": true,
-   "t": "Third round of postcard posts in local community groups"
-  },
-  {
-   "d": "2026-11-11",
-   "next": true,
-   "t": "Second round of postcard posts in local community groups, a new set in each"
+   "t": "Next round of postcard posts in local community groups, a new set in each"
   },
   {
    "d": "Up next",
@@ -810,7 +805,7 @@
   "Mailchimp Reports",
   "Buffer Analytics"
  ],
- "updatedAt": "2026-11-15",
+ "updatedAt": "2026-11-16",
  "videoAssets": 14,
  "voices": [
   "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
