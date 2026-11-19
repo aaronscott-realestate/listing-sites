@@ -165,7 +165,7 @@
   {
    "n": "Facebook Groups",
    "p": "fb",
-   "sl": "Nov 18",
+   "sl": "Up next",
    "st": "sched",
    "th": "s_pcnb",
    "w": "Next round, a new set in each group"
@@ -556,7 +556,7 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-16T14:17:23.000Z",
+ "rev": "2026-11-19T10:58:00.000Z",
  "snips": [
   {
    "k": "s_swimspa",
@@ -692,7 +692,7 @@
    "t": "Full postcard collection premieres on YouTube with a Google video ad"
   },
   {
-   "d": "2026-11-18",
+   "d": "Up next",
    "next": true,
    "t": "Next round of postcard posts in local community groups, a new set in each"
   },
@@ -805,7 +805,7 @@
   "Mailchimp Reports",
   "Buffer Analytics"
  ],
- "updatedAt": "2026-11-16",
+ "updatedAt": "2026-11-19",
  "videoAssets": 14,
  "voices": [
   "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
