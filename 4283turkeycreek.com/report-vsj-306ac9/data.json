@@ -157,7 +157,7 @@
   {
    "n": "Facebook",
    "p": "fb",
-   "sl": "Through Nov 20",
+   "sl": "Up next",
    "st": "sched",
    "th": "s_pcmoon",
    "w": "Postcard Reels and Stories, new set every few days"
@@ -359,6 +359,16 @@
   {
    "n": "Mailchimp",
    "p": "mc",
+   "r": 3389,
+   "rl": "agents",
+   "sl": "Sent Nov 20",
+   "st": "live",
+   "th": "back",
+   "w": "Middle Tennessee agent email, fourth send (Celebrate Turkey Week)"
+  },
+  {
+   "n": "Mailchimp",
+   "p": "mc",
    "sl": "Up next · 13,900+ agents",
    "st": "sched",
    "th": "shop",
@@ -449,6 +459,10 @@
     {
      "s": "Sent Nov 14",
      "t": "“A Morning on Five Acres” email to 3,410 Middle Tennessee agents"
+    },
+    {
+     "s": "Sent Nov 20",
+     "t": "“Celebrate Turkey Week” email to 3,389 Middle Tennessee agents"
     },
     {
      "s": "Sent Nov 1",
@@ -544,7 +558,7 @@
  "reach": [
   {
    "l": "Middle Tennessee agents",
-   "v": 10388
+   "v": 13777
   },
   {
    "l": "Out-of-state relocation agents",
@@ -556,7 +570,7 @@
   }
  ],
  "reachNote": "",
- "rev": "2026-11-20T10:57:02.000Z",
+ "rev": "2026-11-21T10:56:14.000Z",
  "snips": [
   {
    "k": "s_swimspa",
@@ -702,6 +716,10 @@
    "t": "Email to all 13,900+ out-of-state relocation agents (Los Angeles, Ventura, Orange County, San Diego)"
   },
   {
+   "d": "2026-11-20",
+   "t": "“Celebrate Turkey Week at Turkey Creek” email sent to 3,389 Middle Tennessee agents"
+  },
+  {
    "d": "2026-11-14",
    "t": "“A Morning on Five Acres” email sent to 3,410 Middle Tennessee agents"
   },
@@ -805,7 +823,7 @@
   "Mailchimp Reports",
   "Buffer Analytics"
  ],
- "updatedAt": "2026-11-20",
+ "updatedAt": "2026-11-21",
  "videoAssets": 14,
  "voices": [
   "Five acres off Turkey Creek Road, and the first thing you notice is how quiet it gets past the gate.",
